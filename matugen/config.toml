@@ -1,0 +1,78 @@
+[config]
+
+[templates.hyprland]
+input_path = 'templates/hyprland-colors.lua'
+output_path = '~/.config/hypr/extra/hyprland-colors.lua'
+post_hook   = 'hyprctl reload'
+
+[templates.hyprlock]
+input_path = 'templates/hyprlock-colors.conf'
+output_path = '~/.config/hypr/extra/hyprlock-colors.conf'
+
+[templates.kitty]
+input_path = 'templates/kitty-colors.conf'
+output_path = '~/.config/kitty/themes/Matugen.conf'
+post_hook = "kitty +kitten themes --reload-in=all Matugen"
+
+[templates.mako]
+input_path = 'templates/mako-colors.conf'
+output_path = '~/.config/mako/mako-colors'
+post_hook = 'makoctl reload'
+
+[templates.qt5ct]
+input_path = 'templates/qtct-colors.conf'
+output_path = '~/.config/qt5ct/colors/matugen.conf'
+
+[templates.qt6ct]
+input_path = 'templates/qtct-colors.conf'
+output_path = '~/.config/qt6ct/colors/matugen.conf'
+
+[templates.gtk3]
+input_path = 'templates/gtk-colors.css'
+output_path = '~/.config/gtk-3.0/gtk.css'
+post_hook = 'gsettings set org.gnome.desktop.interface gtk-theme ""; gsettings set org.gnome.desktop.interface gtk-theme adw-gtk3-{{mode}}'
+
+[templates.gtk4]
+input_path = 'templates/gtk-colors.css'
+output_path = '~/.config/gtk-4.0/gtk.css'
+
+[templates.govee]
+input_path = 'templates/primary'
+output_path = '~/Scripts/primary.txt'
+post_hook = 'cd ~/Scripts/; ./set-light-color.py'
+
+[templates.quickshell]
+input_path = 'templates/quickshell.json'
+output_path = '~/.local/state/quickshell/generated/colors.json'
+
+[templates.zen-userchrome]
+input_path = 'templates/zen/userChrome.css'
+output_path = '~/.config/zen/chrome/zen-userChrome.css'
+
+[templates.zen-usercontent]
+input_path = 'templates/zen/userContent.css'
+output_path = '~/.config/zen/chrome/zen-userContent.css'
+
+[templates.zen-webcolors]
+input_path = 'templates/zen/web-colors.css'
+output_path = '~/.config/zen/chrome/colors.css'
+
+[templates.vesktop]
+input_path = 'templates/matucord.css'
+output_path= '~/.config/vesktop/themes/matucord.css'
+
+[templates.code-raw]
+input_path = 'templates/code/vscode-colors'
+output_path = '~/.cache/matugen/vscode-colors'
+
+[templates.code-json]
+input_path = 'templates/code/vscode-colors.json'
+output_path = '~/.cache/matugen/vscode-colors.json'
+
+[templates.obsidian]
+input_path = 'templates/obsidian.css'
+output_path = 'OBSIDIAN_VAULT_PATH/.obsidian/snippets/matugen.css'
+
+[templates.mpv]
+input_path = 'templates/mpv-colors.conf'
+output_path = '~/.config/mpv/colors.conf'

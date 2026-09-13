@@ -1,0 +1,36 @@
+/**
+ * @name Matucord
+ * @author neriidesu
+ * @authorId 422417693711400963
+ * @version 0.1.0
+ * @description Matugen controlled theme for discord, based on discordrecolor & everforest
+ * **/
+
+@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/DiscordRecolor/DiscordRecolor.css);
+
+:root {
+	--settingsicons:		1;				/*	Use Settings Icons in User Settings: 1 = yes, 0 = no							*/
+	--font:				"gg sans", "Noto Sans";		/*	General Font												*/
+	
+	--accentcolor: 			{{colors.primary.default.red}},{{colors.primary.default.green}},{{colors.primary.default.blue}};			/*	Blurple			-	default:	88,101,242		-	hex:	#5865f2		*/
+	--accentcolor2: 		255,115,250;			/*	Boostpink		-	default:	255,115,250		-	hex:	#ff73fa		*/
+	--linkcolor: 			{{colors.primary.default.red}},{{colors.primary.default.green}},{{colors.primary.default.blue}};			/*	Link Color		-	default:	0,176,244		-	hex:	#00b0f4		*/
+	--mentioncolor: 		{{colors.primary.default.red}},{{colors.primary.default.green}},{{colors.primary.default.blue}};			/*	Highlight Color		-	default:	250,166,26		-	hex:	#faa61a		*/
+	--successcolor: 		167,192,128;			/*	Success Color		-	default:	59,165,92		-	hex:	#3ba55c		*/
+	--warningcolor: 		219,188,127;			/*	Warning Color		-	default:	250,166,26		-	hex:	#faa61a		*/
+	--dangercolor:  		{{colors.on_error.default.red}},{{colors.on_error.default.green}},{{colors.on_error.default.blue}};			/*	Danger Color		-	default:	237,66,69		-	hex:	#ed4245		*/
+	
+	--textbrightest: 		{{colors.on_surface.default.red}},{{colors.on_surface.default.green}},{{colors.on_surface.default.blue}};			/*	Text Color 1		-	default:	255,255,255		-	hex:	#ffffff		*/
+	--textbrighter: 		{{colors.on_surface.default.red}},{{colors.on_surface.default.green}},{{colors.on_surface.default.blue}};			/*	Text Color 2		-	default:	220,221,222		-	hex:	#dcddde		*/
+	--textbright: 			{{colors.on_surface.default.red}},{{colors.on_surface.default.green}},{{colors.on_surface.default.blue}};			/*	Text Color 3		-	default:	185,187,190		-	hex:	#b9bbbe		*/
+	--textdark: 			{{colors.on_surface_variant.default.red}},{{colors.on_surface_variant.default.green}},{{colors.on_surface_variant.default.blue}};			/*	Text Color 4		-	default:	142,146,151		-	hex:	#8e9297		*/
+	--textdarker: 			{{colors.on_surface_variant.default.red}},{{colors.on_surface_variant.default.green}},{{colors.on_surface_variant.default.blue}};			/*	Text Color 5		-	default:	114,118,125		-	hex:	#72767d		*/
+	--textdarkest: 			{{colors.on_surface_variant.default.red}},{{colors.on_surface_variant.default.green}},{{colors.on_surface_variant.default.blue}};			/*	Text Color 6		-	default:	79,84,92		-	hex:	#4f545c		*/
+	
+	--backgroundaccent: 		{{colors.primary_container.default.red}},{{colors.primary_container.default.green}},{{colors.primary_container.default.blue}};			/*	Background Accent	-	default:	64,68,75		-	hex:	#40444b		*/
+	--backgroundprimary: 		{{colors.background.default.red}},{{colors.background.default.green}},{{colors.background.default.blue}};			/*	Background 1		-	default:	54,57,63		-	hex:	#36393f		*/
+	--backgroundsecondary: 		{{colors.surface.default.red}},{{colors.surface.default.green}},{{colors.surface.default.blue}};			/*	Background 2		-	default:	47,49,54		-	hex:	#2f3136		*/
+	--backgroundsecondaryalt: 	{{colors.surface_container.default.red}},{{colors.surface_container.default.green}},{{colors.surface_container.default.blue}};			/*	Background 3		-	default:	41,43,47		-	hex:	#292b2f		*/
+	--backgroundtertiary: 		{{colors.surface_container_low.default.red}},{{colors.surface_container_low.default.green}},{{colors.surface_container_low.default.blue}};			/*	Background 4		-	default:	32,34,37		-	hex:	#202225		*/
+	--backgroundfloating: 		0,0,0;				/*	Background Elevated	-	default:	24,25,28		-	hex:	#18191c		*/
+}
